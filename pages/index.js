@@ -14,7 +14,7 @@ const Homepage = ({ t }) => {
       <main>
         <Header title={t('h1')} />
         <div>
-          <Link
+          <Link legacyBehavior
             href='/'
             locale={router.locale === 'en' ? 'de' : 'en'}
           >
@@ -22,7 +22,7 @@ const Homepage = ({ t }) => {
               {t('change-locale')}
             </button>
           </Link>
-          <Link href='/second-page'>
+          <Link legacyBehavior href='/second-page'>
             <button
               type='button'
             >
