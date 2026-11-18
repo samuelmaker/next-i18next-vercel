@@ -10,7 +10,7 @@ const SecondPage = ({ t }) => (
   <>
     <main>
       <Header title={t('h1')} />
-      <Link href='/'>
+      <Link legacyBehavior href='/'>
         <button
           type='button'
         >
